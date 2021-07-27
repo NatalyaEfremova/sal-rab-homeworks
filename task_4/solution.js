@@ -10,16 +10,15 @@ function parseProducts(json) {
     let data = JSON.parse(json);
     let products;
     products = data.products;
-    return data.products;
+    return products;
 
 }
 
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
-   function renderProductsCards(json){
+    function renderProductsCards(json){
     // дальнейшие действия требуется выполнять тут
     clearProducts()
-    function renderProductsCards(products)
     products = parseProducts(json)
     let length = products.length
     for (let i = 0; i < length; i += 1) {
